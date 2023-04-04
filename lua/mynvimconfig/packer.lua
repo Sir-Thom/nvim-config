@@ -65,4 +65,18 @@ use({
     {'L3MON4D3/LuaSnip'},     -- Required
   }
 }
+use {
+	"luukvbaal/nnn.nvim",
+	config = function() require("nnn").setup() end
+}
+use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional
+  },
+  config = function()
+    require("nvim-tree").setup {}
+  end
+}
+use 'andweeb/presence.nvim'
 end)
