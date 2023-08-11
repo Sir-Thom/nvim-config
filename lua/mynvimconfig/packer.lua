@@ -65,6 +65,7 @@ use({
     {'L3MON4D3/LuaSnip'},     -- Required
   }
 }
+
 use {
 	"luukvbaal/nnn.nvim",
 	config = function() require("nnn").setup() end
@@ -80,4 +81,8 @@ use {
 }
 use 'andweeb/presence.nvim'
 use {'ojroques/nvim-hardline'}
+use 'neovim/nvim-lspconfig'
+use 'simrat39/rust-tools.nvim'
+use {'mhartington/formatter.nvim'}
+use 'mfussenegger/nvim-lint'
 end)

@@ -1,3 +1,5 @@
+require("mason").setup()
+require("mason-lspconfig").setup()
 local lsp = require('lsp-zero').preset({'recommended'})
 
 lsp.on_attach(function(client, bufnr)
@@ -5,6 +7,7 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 -- (Optional) Configure lua language server for neovim
+
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.ensure_installed({
@@ -15,7 +18,21 @@ lsp.ensure_installed({
   'cssls',
   'pylsp',
   'html',
+  'pyright',
 })
+require'lspconfig'.pylyzer.setup{}
+require'lspconfig'.pylsp.setup{
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = {'W391'},
+          maxLineLength = 100
+        }
+      }
+    }
+  }
+}
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
 
@@ -25,7 +42,7 @@ cmp.setup({
   },	
     mapping = {
     ['<C-Space>'] = cmp.mapping.complete(),
-    ['<C-y>'] = cmp.mapping.confirm({select = true}),
+    ['<Tab>'] = cmp.mapping.confirm({select = true}),
     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
     ['<C-d>'] = cmp.mapping.scroll_docs(4),
     ['<C-f>'] = cmp_action.luasnip_jump_forward(),
