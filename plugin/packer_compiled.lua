@@ -84,8 +84,13 @@ _G.packer_plugins = {
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
+  },
   kangawa = {
-    config = { "\27LJ\2\n\15\0\1\2\0\0\0\0024\1\0\0L\1\2\0ç\3\1\0\6\0\28\0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0024\3\0\0=\3\6\0025\3\a\0=\3\b\0025\3\t\0=\3\n\0024\3\0\0=\3\v\0025\3\f\0004\4\0\0=\4\r\0035\4\14\0004\5\0\0=\5\15\0044\5\0\0=\5\16\0044\5\0\0=\5\17\0044\5\0\0=\5\18\4=\4\19\3=\3\20\0023\3\21\0=\3\22\0025\3\23\0=\3\24\2B\0\2\0016\0\25\0009\0\26\0'\2\27\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\15background\1\0\2\tdark\vdragon\nlight\nlotus\14overrides\0\vcolors\ntheme\ball\vdragon\nlotus\twave\1\0\0\fpalette\1\0\0\14typeStyle\19statementStyle\1\0\1\tbold\2\17keywordStyle\1\0\1\vitalic\2\18functionStyle\17commentStyle\1\0\1\vitalic\2\1\0\6\ntheme\vdragon\16dimInactive\1\19terminalColors\2\fcompile\1\14undercurl\2\16transparent\2\nsetup\rkanagawa\frequire\0" },
+    config = { "\27LJ\2\n\15\0\1\2\0\0\0\0024\1\0\0L\1\2\0Ö\4\0\1\5\0\"\0I9\1\0\0005\2\a\0005\3\3\0009\4\1\0019\4\2\4=\4\4\0039\4\1\0019\4\5\4=\4\6\3=\3\b\0025\3\t\0009\4\1\0019\4\n\4=\4\6\3=\3\v\0025\3\r\0009\4\1\0019\4\f\4=\4\6\3=\3\14\0025\3\15\0009\4\1\0019\4\n\4=\4\6\3=\3\16\0025\3\18\0009\4\1\0019\4\17\4=\4\4\3=\3\19\0025\3\20\0009\4\1\0019\4\5\4=\4\6\3=\3\21\0025\3\22\0009\4\1\0019\4\5\4=\4\4\0039\4\1\0019\4\5\4=\4\6\3=\3\23\0025\3\25\0009\4\1\0019\4\24\4=\4\4\0039\4\1\0019\4\f\4=\4\6\3=\3\26\0025\3\27\0009\4\1\0019\4\f\4=\4\4\0039\4\1\0019\4\f\4=\4\6\3=\3\28\0025\3\30\0009\4\1\0019\4\29\4=\4\6\3=\3\31\0025\3 \0009\4\1\0019\4\29\4=\4\6\0039\4\1\0019\4\29\4=\4\4\3=\3!\2L\2\2\0\27TelescopePreviewBorder\1\0\0\27TelescopePreviewNormal\1\0\0\vbg_dim\27TelescopeResultsBorder\1\0\0\27TelescopeResultsNormal\1\0\0\vfg_dim\26TelescopePromptBorder\1\0\0\26TelescopePromptNormal\1\0\0\19TelescopeTitle\1\0\1\tbold\2\fspecial\15PmenuThumb\1\0\0\14PmenuSbar\1\0\0\nbg_m1\rPmenuSel\nbg_p2\1\0\1\afg\tNONE\nPmenu\1\0\0\abg\nbg_p1\afg\1\0\0\vshade0\aui\nthemeþ\3\1\0\6\0\30\0)6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0024\3\0\0=\3\6\0025\3\a\0=\3\b\0025\3\t\0=\3\n\0025\3\v\0=\3\f\0025\3\r\0004\4\0\0=\4\14\0035\4\15\0004\5\0\0=\5\16\0044\5\0\0=\5\17\0044\5\0\0=\5\18\0044\5\0\0=\5\19\4=\4\20\3=\3\21\0023\3\22\0=\3\23\0025\3\24\0=\3\25\2B\0\2\0013\0\26\0007\0\23\0006\0\27\0009\0\28\0'\2\29\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\0\15background\1\0\2\nlight\nlotus\tdark\vdragon\14overrides\0\vcolors\ntheme\ball\vdragon\nlotus\twave\1\0\0\fpalette\1\0\0\14typeStyle\1\0\1\14underline\2\19statementStyle\1\0\1\tbold\2\17keywordStyle\1\0\1\vitalic\2\18functionStyle\17commentStyle\1\0\1\vitalic\2\1\0\6\19terminalColors\2\16dimInactive\2\fcompile\1\14undercurl\2\16transparent\1\ntheme\vdragon\nsetup\rkanagawa\frequire\0" },
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/kangawa",
     url = "https://github.com/rebelot/kanagawa.nvim"
@@ -120,6 +125,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/nvim-hardline",
     url = "https://github.com/ojroques/nvim-hardline"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -185,18 +195,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
--- Config for: kangawa
-time([[Config for kangawa]], true)
-try_loadstring("\27LJ\2\n\15\0\1\2\0\0\0\0024\1\0\0L\1\2\0ç\3\1\0\6\0\28\0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0024\3\0\0=\3\6\0025\3\a\0=\3\b\0025\3\t\0=\3\n\0024\3\0\0=\3\v\0025\3\f\0004\4\0\0=\4\r\0035\4\14\0004\5\0\0=\5\15\0044\5\0\0=\5\16\0044\5\0\0=\5\17\0044\5\0\0=\5\18\4=\4\19\3=\3\20\0023\3\21\0=\3\22\0025\3\23\0=\3\24\2B\0\2\0016\0\25\0009\0\26\0'\2\27\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\15background\1\0\2\tdark\vdragon\nlight\nlotus\14overrides\0\vcolors\ntheme\ball\vdragon\nlotus\twave\1\0\0\fpalette\1\0\0\14typeStyle\19statementStyle\1\0\1\tbold\2\17keywordStyle\1\0\1\vitalic\2\18functionStyle\17commentStyle\1\0\1\vitalic\2\1\0\6\ntheme\vdragon\16dimInactive\1\19terminalColors\2\fcompile\1\14undercurl\2\16transparent\2\nsetup\rkanagawa\frequire\0", "config", "kangawa")
-time([[Config for kangawa]], false)
 -- Config for: nnn.nvim
 time([[Config for nnn.nvim]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\bnnn\frequire\0", "config", "nnn.nvim")
 time([[Config for nnn.nvim]], false)
+-- Config for: kangawa
+time([[Config for kangawa]], true)
+try_loadstring("\27LJ\2\n\15\0\1\2\0\0\0\0024\1\0\0L\1\2\0Ö\4\0\1\5\0\"\0I9\1\0\0005\2\a\0005\3\3\0009\4\1\0019\4\2\4=\4\4\0039\4\1\0019\4\5\4=\4\6\3=\3\b\0025\3\t\0009\4\1\0019\4\n\4=\4\6\3=\3\v\0025\3\r\0009\4\1\0019\4\f\4=\4\6\3=\3\14\0025\3\15\0009\4\1\0019\4\n\4=\4\6\3=\3\16\0025\3\18\0009\4\1\0019\4\17\4=\4\4\3=\3\19\0025\3\20\0009\4\1\0019\4\5\4=\4\6\3=\3\21\0025\3\22\0009\4\1\0019\4\5\4=\4\4\0039\4\1\0019\4\5\4=\4\6\3=\3\23\0025\3\25\0009\4\1\0019\4\24\4=\4\4\0039\4\1\0019\4\f\4=\4\6\3=\3\26\0025\3\27\0009\4\1\0019\4\f\4=\4\4\0039\4\1\0019\4\f\4=\4\6\3=\3\28\0025\3\30\0009\4\1\0019\4\29\4=\4\6\3=\3\31\0025\3 \0009\4\1\0019\4\29\4=\4\6\0039\4\1\0019\4\29\4=\4\4\3=\3!\2L\2\2\0\27TelescopePreviewBorder\1\0\0\27TelescopePreviewNormal\1\0\0\vbg_dim\27TelescopeResultsBorder\1\0\0\27TelescopeResultsNormal\1\0\0\vfg_dim\26TelescopePromptBorder\1\0\0\26TelescopePromptNormal\1\0\0\19TelescopeTitle\1\0\1\tbold\2\fspecial\15PmenuThumb\1\0\0\14PmenuSbar\1\0\0\nbg_m1\rPmenuSel\nbg_p2\1\0\1\afg\tNONE\nPmenu\1\0\0\abg\nbg_p1\afg\1\0\0\vshade0\aui\nthemeþ\3\1\0\6\0\30\0)6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0024\3\0\0=\3\6\0025\3\a\0=\3\b\0025\3\t\0=\3\n\0025\3\v\0=\3\f\0025\3\r\0004\4\0\0=\4\14\0035\4\15\0004\5\0\0=\5\16\0044\5\0\0=\5\17\0044\5\0\0=\5\18\0044\5\0\0=\5\19\4=\4\20\3=\3\21\0023\3\22\0=\3\23\0025\3\24\0=\3\25\2B\0\2\0013\0\26\0007\0\23\0006\0\27\0009\0\28\0'\2\29\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\0\15background\1\0\2\nlight\nlotus\tdark\vdragon\14overrides\0\vcolors\ntheme\ball\vdragon\nlotus\twave\1\0\0\fpalette\1\0\0\14typeStyle\1\0\1\14underline\2\19statementStyle\1\0\1\tbold\2\17keywordStyle\1\0\1\vitalic\2\18functionStyle\17commentStyle\1\0\1\vitalic\2\1\0\6\19terminalColors\2\16dimInactive\2\fcompile\1\14undercurl\2\16transparent\1\ntheme\vdragon\nsetup\rkanagawa\frequire\0", "config", "kangawa")
+time([[Config for kangawa]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

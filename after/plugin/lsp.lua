@@ -1,9 +1,9 @@
 require("mason").setup()
 require("mason-lspconfig").setup()
-local lsp = require('lsp-zero').preset({'recommended'})
+local lsp = require('lsp-zero').preset({ 'recommended' })
 
 lsp.on_attach(function(client, bufnr)
-  lsp.default_keymaps({buffer = bufnr})
+    lsp.default_keymaps({ buffer = bufnr })
 end)
 
 -- (Optional) Configure lua language server for neovim
@@ -11,48 +11,48 @@ end)
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.ensure_installed({
-  'tsserver',
-  'eslint', 
-  'rust_analyzer',
-  'csharp_ls',
-  'cssls',
-  'pylsp',
-  'html',
-  'pyright',
+    'tsserver',
+    'eslint',
+    'rust_analyzer',
+    'csharp_ls',
+    'cssls',
+    'pylsp',
+    'html',
+    'pyright',
 })
-require'lspconfig'.pylyzer.setup{}
-require'lspconfig'.pylsp.setup{
-  settings = {
-    pylsp = {
-      plugins = {
-        pycodestyle = {
-          ignore = {'W391'},
-          maxLineLength = 100
+require 'lspconfig'.pylyzer.setup {}
+require 'lspconfig'.pylsp.setup {
+    settings = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    ignore = { 'W391' },
+                    maxLineLength = 100
+                }
+            }
         }
-      }
     }
-  }
 }
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
 
 cmp.setup({
-  sources = {
-    {name = 'nvim_lsp'},
-  },	
+    sources = {
+        { name = 'nvim_lsp' },
+    },
     mapping = {
-    ['<C-Space>'] = cmp.mapping.complete(),
-    ['<Tab>'] = cmp.mapping.confirm({select = true}),
-    ['<C-u>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-d>'] = cmp.mapping.scroll_docs(4),
-    ['<C-f>'] = cmp_action.luasnip_jump_forward(),
-    ['<C-b>'] = cmp_action.luasnip_jump_backward(),
-  }
-  })
-  lsp.set_sign_icons({
-  error = '✘',
-  warn = '▲',
-  hint = '⚑',
-  info = '»'
+        ['<C-Space>'] = cmp.mapping.complete(),
+        ['<Tab>'] = cmp.mapping.confirm({ select = true }),
+        ['<C-u>'] = cmp.mapping.scroll_docs( -4),
+        ['<C-d>'] = cmp.mapping.scroll_docs(4),
+        ['<C-f>'] = cmp_action.luasnip_jump_forward(),
+        ['<C-b>'] = cmp_action.luasnip_jump_backward(),
+    }
+})
+lsp.set_sign_icons({
+    error = '✘',
+    warn = '▲',
+    hint = '⚑',
+    info = '»'
 })
 lsp.setup()
